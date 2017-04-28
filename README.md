@@ -1,2 +1,3 @@
 # node-server
-nodejs-express project, a web app
+a sample nodejs-express project, a web app with nunjucks, angularjs
+
