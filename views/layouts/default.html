@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <!-- meta tags start -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <!-- meta tags end -->
+    <!-- Css -->
+    <link href="{{ resDomain }}stylesheets/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <script src="{{ resDomain }}javascripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src="{{ resDomain }}javascripts/lib/jquery.cookie/jquery.cookie.js"></script>
+    <script src="{{ resDomain }}javascripts/lib/fastclick/lib/fastclick.js"></script>
+    <script src="{{ resDomain }}javascripts/lib/angular/angular.js"></script>
+    <script src='{{ resDomain }}javascripts/lib/moment/min/moment.min.js'></script>
+    <script src='{{ resDomain }}javascripts/controller/main-controller.js' type="text/javascript"></script>
+    <script>
+        window.addEventListener('load', function () {
+            FastClick.attach(document.body);
+        }, false);
+    </script>
+    {% block header %}{% endblock %}
+</head>
+<body ng-controller="mainController">
+{% block body %}{% endblock %}
+{% block scripts %}{% endblock %}
+</body>
+</html>

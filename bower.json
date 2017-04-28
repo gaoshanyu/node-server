@@ -1,0 +1,29 @@
+{
+  "name": "node-server",
+  "description": "node-server",
+  "main": "node-server",
+  "authors": [
+    "raniys"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "amd"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/javascripts/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.x",
+    "bootstrap": "~3.3.6",
+    "jquery.cookie": "~1.4.1",
+    "angular": "~1.2.x",
+    "angular-cookies": "~1.2.x"
+  }
+}
